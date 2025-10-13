@@ -23,18 +23,16 @@ export const useStreamChat = () => {
 
             try {
                 const client = StreamChat.getInstance(STREAM_API_KEY);
--                await client.connectUser({
--                    id: user.id,
--                    name: user.fullName,
--                    image: user.imageUrl
-                await client.connectUser(
-                    {
-                        id: user.id,
-                        name: user.fullName,
-                        image: user.imageUrl,
-                    },
-                    tokenData.token,
-                );
+             try {
+                 const client = StreamChat.getInstance(STREAM_API_KEY);
+                 await client.connectUser(
+                     {
+                         id: user.id,
+                         name: user.fullName,
+                         image: user.imageUrl,
+                     },
+                     tokenData.token,
+                 );
                 setChatClient(client);
             } catch (error) {
                 console.log("Error connecting to stream", error);
