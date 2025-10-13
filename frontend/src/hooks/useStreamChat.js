@@ -46,7 +46,7 @@ export const useStreamChat = () => {
         return () => {
             if (chatClient) chatClient.disconnectUser();
         }
-    }, [tokenData, user, chatClient]);
+    }, [tokenData?.token, user?.id]);
 
     return { chatClient, isLoading: tokenLoading, error: tokenError }
 };
