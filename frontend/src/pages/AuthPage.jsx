@@ -19,7 +19,7 @@ const AuthPage = () => {
                             <span>Real-time messaging</span>
                         </div>
                         <div className="feature-item">
-                            <span className="feature-icon">📽️</span>
+                            <span className="feature-icon">🎥</span>
                             <span>Video calls and meetings</span>
                         </div>
                         <div className="feature-item">
