@@ -1,5 +1,4 @@
 import { HashIcon } from 'lucide-react';
-import React from 'react'
 
 const CustomChannelPreview = ({ channel, setActiveChannel, activeChannel }) => {
     const isActive = activeChannel && activeChannel.id === channel.id;
