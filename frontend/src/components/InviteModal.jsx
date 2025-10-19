@@ -38,7 +38,7 @@ const InviteModal = ({ channel, onClose }) => {
 
         try {
             await channel.addMembers(selectedMembers);
-            onClose()
+            onClose();
         } catch (error) {
             setError("Failed to invite users");
             console.log("Error inviting users", error);
